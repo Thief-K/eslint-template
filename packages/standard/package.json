@@ -1,0 +1,11 @@
+{
+  "name": "standard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Konp",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-standard": "^16.0.2",
+    "standard": "^16.0.3"
+  }
+}
