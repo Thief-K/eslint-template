@@ -1,5 +1,7 @@
 # Standard
 
+
+
 ## Install
 
 npm
@@ -13,6 +15,8 @@ yarn
 ```sh
 yarn add standard eslint-config-standard -D
 ```
+
+
 
 ## Configuration
 

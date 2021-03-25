@@ -1,5 +1,7 @@
 # Prettier
 
+
+
 ## Install
 
 npm
@@ -13,6 +15,8 @@ yarn
 ```sh
 yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
 ```
+
+
 
 ## Configuration
 
