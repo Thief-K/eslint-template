@@ -7,13 +7,13 @@
 npm
 
 ```sh
-npm install standard eslint-config-standard -D
+npm install standard eslint-config-standard eslint eslint-plugin-import eslint-plugin-node eslint-plugin-promise -D
 ```
 
 yarn
 
 ```sh
-yarn add standard eslint-config-standard -D
+yarn add standard eslint-config-standard eslint eslint-plugin-import eslint-plugin-node eslint-plugin-promise -D
 ```
 
 
@@ -28,7 +28,7 @@ yarn add standard eslint-config-standard -D
   "env": { 
     "es6": true
   },
-  "extends": "standard",
+  "extends": ["standard"],
   "parserOptions": {
     "sourceType": "module"
   }
