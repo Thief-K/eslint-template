@@ -79,6 +79,7 @@ yarn add eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-p
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    "ecmaVersion": 2020,
     "sourceType": "module"
   }
 }

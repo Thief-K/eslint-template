@@ -30,6 +30,7 @@ yarn add standard eslint-config-standard eslint eslint-plugin-import eslint-plug
   },
   "extends": ["standard"],
   "parserOptions": {
+    "ecmaVersion": 2020,
     "sourceType": "module"
   }
 }
@@ -63,6 +64,7 @@ yarn add eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-p
   "extends": ["standard-with-typescript"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    "ecmaVersion": 2020,
     "sourceType": "module",
     "project": "./tsconfig.json"
   }

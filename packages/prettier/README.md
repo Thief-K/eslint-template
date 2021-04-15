@@ -30,6 +30,7 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
   },
   "extends": ["plugin:prettier/recommended"],
   "parserOptions": {
+    "ecmaVersion": 2020,
     "sourceType": "module"
   }
 }

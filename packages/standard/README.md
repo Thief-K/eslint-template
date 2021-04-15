@@ -30,6 +30,7 @@ yarn add standard eslint-config-standard eslint eslint-plugin-import eslint-plug
   },
   "extends": ["standard"],
   "parserOptions": {
+    "ecmaVersion": 2020,
     "sourceType": "module"
   }
 }
