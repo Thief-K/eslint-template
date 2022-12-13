@@ -5,11 +5,8 @@
   "author": "Konp",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^7.23.0",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1",
-    "standard": "^16.0.3"
+    "eslint": "^8.29.0",
+    "eslint-config-standard": "^17.0.0",
+    "standard": "^17.0.0"
   }
 }

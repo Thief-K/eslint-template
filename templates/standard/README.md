@@ -4,16 +4,8 @@
 
 ## Install
 
-npm
-
 ```sh
-npm install standard eslint-config-standard eslint eslint-plugin-import eslint-plugin-node eslint-plugin-promise -D
-```
-
-yarn
-
-```sh
-yarn add standard eslint-config-standard eslint eslint-plugin-import eslint-plugin-node eslint-plugin-promise -D
+npm install eslint standard eslint-config-standard -D
 ```
 
 
@@ -28,9 +20,11 @@ yarn add standard eslint-config-standard eslint eslint-plugin-import eslint-plug
   "env": { 
     "es6": true
   },
-  "extends": ["standard"],
+  "extends": [
+    "standard"
+  ],
   "parserOptions": {
-    "ecmaVersion": 2020,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   }
 }
