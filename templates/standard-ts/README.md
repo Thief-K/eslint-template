@@ -4,16 +4,8 @@
 
 ## Install
 
-npm
-
 ```sh
-npm install standard eslint-config-standard eslint eslint-plugin-import eslint-plugin-node eslint-plugin-promise -D
-```
-
-yarn
-
-```sh
-yarn add standard eslint-config-standard eslint eslint-plugin-import eslint-plugin-node eslint-plugin-promise -D
+npm install eslint standard eslint-config-standard -D
 ```
 
 
@@ -28,9 +20,11 @@ yarn add standard eslint-config-standard eslint eslint-plugin-import eslint-plug
   "env": { 
     "es6": true
   },
-  "extends": ["standard"],
+  "extends": [
+    "standard"
+  ],
   "parserOptions": {
-    "ecmaVersion": 2020,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   }
 }
@@ -40,16 +34,10 @@ yarn add standard eslint-config-standard eslint eslint-plugin-import eslint-plug
 
 ## TypeScript
 
-npm
+install
 
 ```sh
-npm install eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-config-standard-with-typescript -D
-```
-
-yarn
-
-```sh
-yarn add eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-config-standard-with-typescript -D
+npm install typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-config-standard-with-typescript -D
 ```
 
 `.eslintrc.json`
@@ -60,23 +48,27 @@ yarn add eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-p
   "env": { 
     "es6": true
   },
-  "plugins": ["@typescript-eslint"],
-  "extends": ["standard-with-typescript"],
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "standard-with-typescript"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2020,
+    "ecmaVersion": "latest",
     "sourceType": "module",
-    "project": "./tsconfig.json"
+    "project": "./tsconfig.ts"
   }
 }
 ```
 
-`tsconfig.json`
+`tsconfig.ts`
 
-```json
-{
-  "compilerOptions": {
-    "strictNullChecks": true
+```ts
+export default {
+  compilerOptions: {
+    strictNullChecks: true
   }
 }
 ```
