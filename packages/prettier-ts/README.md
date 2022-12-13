@@ -4,16 +4,8 @@
 
 ## Install
 
-npm
-
 ```sh
-npm install prettier eslint-config-prettier eslint-plugin-prettier -D
-```
-
-yarn
-
-```sh
-yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+npm install eslint prettier eslint-config-prettier eslint-plugin-prettier -D
 ```
 
 
@@ -28,8 +20,11 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
   "env": { 
     "es6": true
   },
-  "extends": ["plugin:prettier/recommended"],
+  "extends": [
+    "plugin:prettier/recommended"
+  ],
   "parserOptions": {
+    "ecmaVersion": "latest",
     "sourceType": "module"
   }
 }
@@ -40,7 +35,7 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
 ```json
 {
   "printWidth": 160,
-  "semi": false,
+  "semi": true,
   "singleQuote": true,
   "endOfLine": "auto",
   "trailingComma": "none"
@@ -51,16 +46,10 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
 
 ## TypeScript
 
-npm
+install
 
 ```sh
-npm install eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin -D
-```
-
-yarn
-
-```sh
-yarn add eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin -D
+npm install typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin -D
 ```
 
 `.eslintrc.json`
@@ -71,7 +60,9 @@ yarn add eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-p
   "env": { 
     "es6": true
   },
-  "plugins": ["@typescript-eslint"],
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -79,7 +70,7 @@ yarn add eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-p
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2020,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   }
 }
